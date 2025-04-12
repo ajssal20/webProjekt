@@ -3,80 +3,76 @@
 	let { data } = $props();
 </script>
 
+<div class="space-y-10 px-4 max-w-4xl mx-auto">
 	{#each data.articles as article (article.id)}
-		<div>
-						<span >{article.author}</span>
-					</div>
+		<div class="bg-white p-6 rounded-2xl shadow-md space-y-4">
+			<span class="text-sm text-gray-500">{article.author}</span>
 
-				<img
-					src={article.image}
-					alt="Uploaded"
-				/>
+			<img
+				src={article.image}
+				alt="Uploaded"
+				class="w-full h-64 object-cover rounded-xl"
+			/>
 
-				<div>
-					<form action="?/upvote" method="POST" use:enhance>
-						<input type="hidden" name="id" value={article.id} />
-						<button type="submit" aria-label="like">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="red"
-								viewBox="0 0 23 23"
-								width="26"
-								height="26"
-							>
-								<path
-									d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-								/>
-							</svg>
-						</button>
-					</form>
-					<span
-						>{article.votes} likes</span
-					>
-				</div>
+			<div class="flex items-center justify-between">
+				<form action="?/upvote" method="POST" use:enhance>
+					<input type="hidden" name="id" value={article.id} />
+                    <button type="submit" aria-label="like">
+                        <img
+                            src="https://ivxbbcf824gpd1su.public.blob.vercel-storage.com/images/like-XUwtn07qsLxjqbmTl12WFvsb2cHGnM"
+                            alt="like"
+                            class="w-7 h-7 hover:scale-130 transition-transform duration-200"
+                        />
+                    </button>
+				</form>
+				<span class="text-gray-600 text-sm">{article.votes} likes</span>
+			</div>
 
-				<p >
-					<span>{article.author}</span>
-					{article.description}
-				</p>
+			<p class="text-gray-700">
+				<span class="font-semibold">{article.author}</span>: {article.description}
+			</p>
 
 			<div>
-				<h3>Comments</h3>
-
-				<div>
+				<h3 class="font-bold text-lg">Comments</h3>
+				<div class="space-y-2 mt-2">
 					{#each data.comments as comment}
-						<p>
-							<span>{comment.name}</span>
-							{comment.text}
+						<p class="text-sm text-gray-700">
+							<span class="font-medium">{comment.name}</span>: {comment.text}
 						</p>
 					{/each}
 				</div>
 
-				<form action="?/comment" method="POST" use:enhance>
+				<form action="?/comment" method="POST" use:enhance class="space-y-3 mt-4">
 					<input type="hidden" name="article_id" value={article.id} />
 
 					<div>
-						<label for="name" >Your Name</label>
+						<label for="name" class="block text-sm font-medium text-gray-600">Your Name</label>
 						<input
 							type="text"
 							name="name"
 							required
+							class="mt-1 w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
 						/>
 					</div>
 
 					<div>
-						<label for="text">Your Comment</label>
+						<label for="text" class="block text-sm font-medium text-gray-600">Your Comment</label>
 						<textarea
 							name="text"
 							required
 							rows="2"
+							class="mt-1 w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
 						></textarea>
 					</div>
 
 					<button
 						type="submit"
-						>Add Comment</button
+						class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-xl transition"
 					>
+						Add Comment
+					</button>
 				</form>
 			</div>
+		</div>
 	{/each}
+</div>
