@@ -17,6 +17,7 @@
 
 {#each data.articles as article (article.id)}
 	<div transition:slide>
+        <img src={article.image} alt="img" />
 		<p>{article.id} - {article.description} - {article.author} - {article.votes}</p>
 
 		<form action="?/deleteArticle" method="POST" use:enhance>
