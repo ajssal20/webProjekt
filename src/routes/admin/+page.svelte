@@ -7,6 +7,11 @@
 <div>
 	<h1>Articles</h1>
 
+    <form action="/logout?/logout" method="post">
+		<button type="submit">Logout</button>
+		
+		</form>
+
 	<a href="/admin/new">Create a new article</a>
 </div>
 
