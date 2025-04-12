@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import {flip} from 'svelte/animate';
+	let { data } = $props();
+</script>
+
+
+<h1>Photo Blog</h1>
+
+
+<div>
+{#each data.articles as article (article.id)}
+		<article animate:flip>
+            <a href={`articles/${article.id}`}>
+                <img src={article.image} alt="img"/>
+            </a>
+	<p>{article.author} - {article.votes}</p>
+	
+</article>
+{/each}
+</div>
