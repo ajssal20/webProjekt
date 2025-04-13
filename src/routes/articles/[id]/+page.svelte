@@ -4,6 +4,11 @@
 </script>
 
 <div class="space-y-10 px-4 max-w-4xl mx-auto">
+    <div class="flex justify-center">
+        <a href="/" class="inline-block text-s text-red-600">
+          ← Back
+        </a>
+      </div>
 	{#each data.articles as article (article.id)}
 		<div class="bg-white p-6 rounded-2xl shadow-md space-y-4">
 			<span class="text-sm text-gray-500">{article.author}</span>

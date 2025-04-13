@@ -6,6 +6,11 @@
 
 <div class="max-w-4xl mx-auto p-4">
 	<h1 class="text-3xl font-bold mb-4">Articles</h1>
+    <div class="flex justify-center">
+        <a href="/" class="inline-block text-s text-red-600">
+          ← Back to Home
+        </a>
+      </div>
 
 	<form action="/logout?/logout" method="post" class="mb-4">
 		<button type="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Logout</button>
