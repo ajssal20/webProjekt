@@ -21,6 +21,7 @@ export const actions = {
         const image = formData.get('image');
 		// Upload the image to Vercel Blob storage and get the image URL
 		const { url } = await put('images/' + image.name, image, {
+			addRandomSuffix: true,
 			access: 'public', // Make the image publicly accessible
 			token: BLOB_READ_WRITE_TOKEN // Pass in the secure Blob storage access token
 		});
