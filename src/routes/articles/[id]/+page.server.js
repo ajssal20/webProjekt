@@ -22,8 +22,10 @@ export const actions = {
 	},
 
 	// Action for upvoting an article
+	// upvoteDie Funktion, die aufgerufen wird, wenn ein Nutzer einen Artikel „hochvoten“ will
 	upvote: async ({ request }) => {
 		// Retrieve the form data from the request
+		//liest die daten die gesendet werden
 		const formData = await request.formData();
 		const id = formData.get('id'); // Article ID for the upvote action
 
@@ -37,6 +39,7 @@ export const actions = {
 		);
 
 		// If the update affected any rows, return a success response
+		//Es zeigt an, wie viele Zeilen in der Datenbank tatsächlich verändert wurden.
 		if (result.affectedRows) {
 			return { success: true };
 		} else {
@@ -46,6 +49,7 @@ export const actions = {
 	}
 };
 
+//wir brauchen export um  wenn du Funktionen wie upvote() in anderen Modulen verwenden wills
 // Load function to fetch article and related comments based on the article ID
 export async function load({ params, locals }) {
 	// Create the database connection
