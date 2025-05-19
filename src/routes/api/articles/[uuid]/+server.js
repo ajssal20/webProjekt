@@ -14,9 +14,10 @@ async function authenticate(request) {
         });
     }
    
-    // Decode the base64 credentials from the 'authorization' header
+    // Base64-kodierte Zugangsdaten aus dem Header extrahieren
     const base64Credentials = authHeader.split(' ')[1];
     const credentials = atob(base64Credentials); // Decode base64 to get the username and password
+    //atob = ASCII to binary (also von Base64 zurück zu normalem Text)
     const [username, password] = credentials.split(':');
    
     // If the username and password do not match the stored credentials, return 401
@@ -30,7 +31,7 @@ async function authenticate(request) {
     // If authentication passes, return null to allow further processing
     return null;
 }
-
+// PUT-Methode zum Aktualisieren eines Artikels anhand der UUID
 // GET method to fetch an article by its UUID
 export async function GET({ params }) {
     const { uuid } = params; // Extract the UUID from URL params
@@ -54,7 +55,7 @@ export async function PUT({ params, request }) {
     const connection = await createConnection(); // Create a connection to the database
 
     try {
-        const data = await request.json(); // Parse the incoming JSON data
+        const data = await request.json(); // Artikel löschen anhand der ID
 
         // Execute an UPDATE query to modify the article's fields (with COALESCE to avoid overwriting with null)
         const [result] = await connection.execute(

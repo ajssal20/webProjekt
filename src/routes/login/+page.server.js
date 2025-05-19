@@ -16,12 +16,12 @@ export const actions = {
         // If login is successful and token is generated
         if (token) {
             cookies.set('session', token, {
-                maxAge: 60 * 60 * 24 * 7, // Cookie will expire in 7 days
-                path: '/',
-                httpOnly: true,
+                maxAge: 60 * 60 * 24 * 7,  // 7 Tage in Sekunden
+                path: '/',                 // Cookie gilt für die gesamte Seite               
+                httpOnly: true,            // Cookie ist nur für HTTP (nicht für JS zugreifbar)
                 sameSite: 'strict'
             });
-            // Redirect the user to the '/admin' page upon successful login
+            // Nach erfolgreichem Login wird der Nutzer auf die Admin-Seite weitergeleitet
             redirect(302, '/admin');
         } else {
             // If login failed, return an error message

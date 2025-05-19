@@ -12,7 +12,7 @@
 	<h1 class="text-3xl font-bold mb-4">Articles</h1>
     <div class="flex justify-center">
         <a href="/" class="inline-block text-s text-red-600">
-          ← Back to Home
+           Back to Home
         </a>
       </div>
 
@@ -33,6 +33,7 @@
 			<img src={article.image} alt="img" class="w-full h-64 object-cover rounded mb-4" />
 			
 			<!-- Artikelinformationen: ID, Beschreibung, Autor und Stimmen -->
+		    <!-- <strong> macht den Text fett und markiert ihn als wichtig -->
 			<p class="text-gray-800 mb-2"><strong>ID:</strong> {article.id}</p>
 			<p class="text-gray-700 mb-1"><strong>Description:</strong> {article.description}</p>
 			<p class="text-gray-600 mb-1"><strong>Author:</strong> {article.author}</p>

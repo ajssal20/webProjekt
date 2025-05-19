@@ -8,7 +8,7 @@ export async function load({locals}) {
 		redirect(302, '/login');
 	}
 
-	// Create a connection to the database
+	// Verbindung zur Datenbank herstellen (asynchron, weil es Zeit braucht)
 	let connection = await createConnection();
 	// Select all articles
 	let [rows] = await connection.execute('SELECT * FROM articles');

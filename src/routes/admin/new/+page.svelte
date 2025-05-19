@@ -6,7 +6,7 @@
 	<h1 class="text-3xl font-bold mb-6">Create a new article</h1>
     <div class="flex justify-center">
         <a href="/admin" class="inline-block text-s text-red-600">
-          ← Back to Admin
+          Back to Admin
         </a>
       </div>
 

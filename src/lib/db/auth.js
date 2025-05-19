@@ -1,8 +1,9 @@
 import { createConnection } from '$lib/db/mysql';
 import bcrypt from 'bcrypt';
 
+// Login-Funktion
 export let login = async (email, password) => {
-    let connection = await createConnection();
+    let connection = await createConnection();// Stellt eine Verbindung zur Datenbank her
 
     // Find user with email
     let [users] = await connection.query('SELECT * FROM users WHERE email = ?', [email]);
@@ -13,7 +14,7 @@ export let login = async (email, password) => {
 
     // Check password
     if (!await bcrypt.compare(password, users[0].password_hash)) {
-        return null;
+        return null; // Bei falschem Passwort: Rückgabe von null
     }
 
     // Create token 
@@ -23,7 +24,7 @@ export let login = async (email, password) => {
     let expires = new Date();
     expires.setDate(expires.getDate() + 7);
 
-    // Save token
+    // Falls kein Benutzer aktualisiert wurde, Rückgabe von null
     let [result] = await connection.execute('UPDATE users SET session_token = ?, session_expiration = ? WHERE id = ?', [token, expires, users[0].id]);
     if (result.affectedRows === 0) {
         return null;

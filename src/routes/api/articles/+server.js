@@ -11,7 +11,8 @@ async function authenticate(request) {
     if (!authHeader) {
         return new Response(null, {
             status: 401,
-            headers: { 'WWW-Authenticate': 'Basic realm="Secure Area"' }
+            headers: { 'WWW-Authenticate': 'Basic realm="Secure Area"' }// 'WWW-Authenticate: Basic realm="Secure Area"'
+        // fordert Basic Auth und zeigt im Login-Popup "Secure Area" als Bereichsnamen an.
         });
     }
    
@@ -52,7 +53,7 @@ export async function POST({ request }) {
     const auth = await authenticate(request); // Authenticate the request
     if (auth) return auth; // If authentication fails, return the error response
 
-    const data = await request.json(); // Parse the incoming JSON data (article details)
+    const data = await request.json(); // JSON-Daten aus der Anfrage nehmen (neuer Artikel)
 
     const connection = await createConnection(); // Establish a connection to the database
 
