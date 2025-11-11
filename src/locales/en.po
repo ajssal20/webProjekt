@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-10T09:54:51.028Z\n"
+"PO-Revision-Date: 2025-11-11T09:36:22.641Z\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"MIME-Version: 1.0\n"
+
+#: src/routes/+page.svelte
+msgid "Photo Blog"
+msgstr "Photo Blog"
+
+#: src/routes/admin/+page.svelte
+msgid "Articles"
+msgstr "Articles"
+
+#: src/routes/admin/+page.svelte
+msgid "Back to Home"
+msgstr "Back to Home"
+
+#: src/routes/admin/+page.svelte
+msgid "Logout"
+msgstr "Logout"
+
+#: src/routes/admin/+page.svelte
+msgid "+ Create a new article"
+msgstr "+ Create a new article"
+
+#: src/routes/admin/+page.svelte
+msgid "ID:"
+msgstr "ID:"
+
+#: src/routes/admin/+page.svelte
+msgid "Description:"
+msgstr "Description:"
+
+#: src/routes/admin/+page.svelte
+msgid "Author:"
+msgstr "Author:"
+
+#: src/routes/admin/+page.svelte
+msgid "Votes:"
+msgstr "Votes:"
+
+#: src/routes/admin/+page.svelte
+msgid "Delete"
+msgstr "Delete"
+
+#: src/routes/login/+page.svelte
+#: src/routes/login/+page.svelte
+msgid "Login"
+msgstr "Login"
+
+#: src/routes/login/+page.svelte
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: src/routes/login/+page.svelte
+msgid "Password"
+msgstr "Password"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Create a new article"
+msgstr "Create a new article"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Back to Admin"
+msgstr "Back to Admin"
+
+#: src/routes/+page.svelte
+#: src/routes/admin/new/+page.svelte
+msgid "Image"
+msgstr "Image"
+
+#: src/routes/admin/new/+page.svelte
+#: src/routes/admin/new/+page.svelte
+msgid "Description"
+msgstr "Description"
+
+#: src/routes/admin/new/+page.svelte
+#: src/routes/admin/new/+page.svelte
+msgid "Author"
+msgstr "Author"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Create article"
+msgstr "Create article"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "← Back"
+msgstr "← Back"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Uploaded"
+msgstr "Uploaded"
+
+#. placeholder {0}: article.votes
+#: src/routes/articles/[id]/+page.svelte
+msgid "{0} likes"
+msgstr "{0} likes"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Comments"
+msgstr "Comments"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Your Name"
+msgstr "Your Name"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Your Comment"
+msgstr "Your Comment"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Add Comment"
+msgstr "Add Comment"
+
+#: src/routes/+layout.svelte
+msgid "Language:"
+msgstr "Language:"
+
+#: src/routes/+layout.svelte
+msgid "EN"
+msgstr "EN"
+
+#~ msgid "ES"
+#~ msgstr "ES"
+
+#: src/routes/+layout.svelte
+msgid "DE"
+msgstr "DE"
+
+#: src/routes/+layout.svelte
+msgid "FR"
+msgstr "FR"
+
+#: src/routes/+layout.svelte
+msgid "SQ"
+msgstr "SQ"
+
+#: src/routes/+layout.svelte
+msgid "Language"
+msgstr "Language"
+
+#. placeholder {0}: article.author
+#. placeholder {1}: article.votes
+#: src/routes/+page.svelte
+msgid "{0} • {1} likes"
+msgstr "{0} • {1} likes"

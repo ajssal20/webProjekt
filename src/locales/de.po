@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Copy of the keys from en; fill msgstr as needed
+
+#: src/routes/+layout.svelte
+msgid "Language:"
+msgstr "Sprache:"
+
+#: src/routes/+page.svelte
+msgid "Photo Blog"
+msgstr "Foto-Blog"
+
+#: src/routes/+layout.svelte
+msgid "EN"
+msgstr "EN"
+
+#: src/routes/+layout.svelte
+msgid "DE"
+msgstr "DE"
+
+#: src/routes/+layout.svelte
+msgid "FR"
+msgstr "FR"
+
+#: src/routes/+layout.svelte
+msgid "SQ"
+msgstr "SQ"
+#: src/routes/admin/+page.svelte
+msgid "Articles"
+msgstr "Artikel"
+
+#: src/routes/admin/+page.svelte
+msgid "Back to Home"
+msgstr "Zurück zur Startseite"
+
+#: src/routes/admin/+page.svelte
+msgid "Logout"
+msgstr "Abmelden"
+
+#: src/routes/admin/+page.svelte
+msgid "+ Create a new article"
+msgstr "+ Neuen Artikel erstellen"
+
+#: src/routes/admin/+page.svelte
+msgid "ID:"
+msgstr "ID:"
+
+#: src/routes/admin/+page.svelte
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#: src/routes/admin/+page.svelte
+msgid "Author:"
+msgstr "Autor:"
+
+#: src/routes/admin/+page.svelte
+msgid "Votes:"
+msgstr "Stimmen:"
+
+#: src/routes/admin/+page.svelte
+msgid "Delete"
+msgstr "Löschen"
+
+#: src/routes/login/+page.svelte
+msgid "Login"
+msgstr "Anmelden"
+
+#: src/routes/login/+page.svelte
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: src/routes/login/+page.svelte
+msgid "Password"
+msgstr "Passwort"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Create a new article"
+msgstr "Neuen Artikel erstellen"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Back to Admin"
+msgstr "Zurück zur Verwaltung"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Image"
+msgstr "Bild"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Description"
+msgstr "Beschreibung"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Author"
+msgstr "Autor"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Create article"
+msgstr "Artikel erstellen"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Uploaded"
+msgstr "Hochgeladen"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "{0} likes"
+msgstr "{0} Likes"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Comments"
+msgstr "Kommentare"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Your Name"
+msgstr "Dein Name"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Your Comment"
+msgstr "Dein Kommentar"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Add Comment"
+msgstr "Kommentar hinzufügen"

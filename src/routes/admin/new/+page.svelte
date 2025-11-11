@@ -1,5 +1,8 @@
 <script>
 	import { enhance } from '$app/forms';
+    import '../../locales/main.loader.svelte.js'
+    import { getRuntimeRx } from '../../locales/main.loader.svelte.js'
+    const __i18n = getRuntimeRx()
 </script>
 
 <div class="max-w-xl mx-auto p-6">

@@ -1,6 +1,9 @@
 <script>
 	import { enhance } from '$app/forms';
+    import '../../../locales/main.loader.svelte.js'
+    import { getRuntimeRx } from '../../../locales/main.loader.svelte.js'
 	let { data } = $props();
+    const __i18n = getRuntimeRx()
 </script>
 
 

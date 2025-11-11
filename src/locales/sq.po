@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Copy of the keys from en; fill msgstr as needed
+
+#: src/routes/+layout.svelte
+msgid "Language:"
+msgstr "Gjuha:"
+
+#: src/routes/+page.svelte
+msgid "Photo Blog"
+msgstr "Blogu i fotografive"
+
+#: src/routes/+layout.svelte
+msgid "EN"
+msgstr "EN"
+
+#: src/routes/+layout.svelte
+msgid "DE"
+msgstr "DE"
+
+#: src/routes/+layout.svelte
+msgid "FR"
+msgstr "FR"
+
+#: src/routes/+layout.svelte
+msgid "SQ"
+msgstr "SQ"
+#: src/routes/admin/+page.svelte
+msgid "Articles"
+msgstr "Artikujt"
+
+#: src/routes/admin/+page.svelte
+msgid "Back to Home"
+msgstr "Kthehu te faqja kryesore"
+
+#: src/routes/admin/+page.svelte
+msgid "Logout"
+msgstr "Dil"
+
+#: src/routes/admin/+page.svelte
+msgid "+ Create a new article"
+msgstr "+ Krijo artikull të ri"
+
+#: src/routes/admin/+page.svelte
+msgid "ID:"
+msgstr "ID:"
+
+#: src/routes/admin/+page.svelte
+msgid "Description:"
+msgstr "Përshkrimi:"
+
+#: src/routes/admin/+page.svelte
+msgid "Author:"
+msgstr "Autori:"
+
+#: src/routes/admin/+page.svelte
+msgid "Votes:"
+msgstr "Votat:"
+
+#: src/routes/admin/+page.svelte
+msgid "Delete"
+msgstr "Fshi"
+
+#: src/routes/login/+page.svelte
+msgid "Login"
+msgstr "Hyr"
+
+#: src/routes/login/+page.svelte
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: src/routes/login/+page.svelte
+msgid "Password"
+msgstr "Fjalëkalimi"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Create a new article"
+msgstr "Krijo artikull të ri"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Back to Admin"
+msgstr "Kthehu te administrimi"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Image"
+msgstr "Imazh"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Description"
+msgstr "Përshkrimi"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Author"
+msgstr "Autori"
+
+#: src/routes/admin/new/+page.svelte
+msgid "Create article"
+msgstr "Krijo artikullin"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Uploaded"
+msgstr "Ngarkuar"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "{0} likes"
+msgstr "{0} pëlqime"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Comments"
+msgstr "Komente"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Your Name"
+msgstr "Emri juaj"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Your Comment"
+msgstr "Komenti juaj"
+
+#: src/routes/articles/[id]/+page.svelte
+msgid "Add Comment"
+msgstr "Shto koment"

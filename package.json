@@ -33,7 +33,11 @@
 	},
 	"dependencies": {
 		"@vercel/blob": "^1.0.0",
+		"@wuchale/svelte": "^0.17.4",
+		"@wuchale/vite-plugin": "^0.15.3",
 		"bcrypt": "^5.1.1",
-		"mysql2": "^3.14.0"
+		"mysql2": "^3.14.0",
+		"npx": "^10.2.2",
+		"wuchale": "^0.18.3"
 	}
 }
