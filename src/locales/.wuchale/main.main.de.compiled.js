@@ -28,7 +28,7 @@
             set('Author','Autor')
             set('Create article','Artikel erstellen')
             set('Uploaded','Hochgeladen')
-            setArr([0,' likes'],[0,' Likes'])
+            setArr([0,' likes'],[0,' Gefallen'])
             set('Comments','Kommentare')
             set('Your Name','Dein Name')
             set('Your Comment','Dein Kommentar')
