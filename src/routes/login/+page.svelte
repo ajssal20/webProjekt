@@ -4,7 +4,7 @@
 	import { getRuntimeRx } from '../../locales/main.loader.svelte.js'
 		// Importiert das Warning-Komponenten, das eine Fehlermeldung anzeigt, wenn etwas schiefgeht
 	import Warning from "$lib/components/Warning.svelte";
-	export let form;
+	let {form } = $props();
     const __i18n = getRuntimeRx()
 </script>
 
